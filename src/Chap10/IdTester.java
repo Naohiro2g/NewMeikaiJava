@@ -28,6 +28,8 @@ public class IdTester {
 		System.out.println("bの識別番号：" + b.getId());
 
 		System.out.println("Id.counter = " + Id.counter);
+		// counterは、staticすなわちクラス変数なのでインスタンスからの参照は推奨されない。
+		// インスタンスから参照しても、結局、同じ値になる。
 		System.out.println("a.counter  = " + a.counter);
 		System.out.println("b.counter  = " + b.counter);
 	}
